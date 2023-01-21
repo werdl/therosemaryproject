@@ -9,21 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
-                background-image: linear-gradient(135deg, rgb(139, 198, 236) 0%, rgb(149, 153, 226) 50%, rgb(139, 198, 236) 100%);
+                
                 object-fit: cover;
             }
-
-            @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
             .sidenav {
                 display: flex;
@@ -72,6 +60,7 @@
                 background: white;
                 color: black;
                 text-decoration: none;
+                overflow: hidden;
             }
 
             a.active,
@@ -109,13 +98,14 @@
               }
 
               .main {
-                margin-left: 300px;
                 padding: 25px;
+                padding-left: 325px;
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
+                background-image: linear-gradient(135deg, rgb(139, 198, 236) 0%, rgb(149, 153, 226) 100%);
               }
 
               .main-top {
@@ -143,17 +133,20 @@
               }
               @media (prefers-color-scheme: dark) {
                 body {
-                    background-image: linear-gradient(135deg, rgb(13, 42, 60) 0%, rgb(73, 75, 125) 100%);
+                    background: darkslategray;
                     color: white;
                 }
                 code {
                     color: white;
                     background: darkslategray;
                 }
+                .main {
+                    background-image: linear-gradient(135deg, rgb(13, 42, 60) 0%, rgb(73, 75, 125) 100%);
+                }
               }
               @media (max-width: 579px) {
                 .main {
-                    margin-left: 0;
+                    padding-left: 25px;
                 }
                 .sidenav {
                     display: none;
@@ -182,7 +175,7 @@
               }
               @media (max-height: 330px) {
                 .main {
-                    margin-left: 0;
+                    padding-left: 0;
                 }
                 .sidenav {
                     display: none;
@@ -218,6 +211,14 @@
               .topnav-button {
                 width: auto;
                 height: auto;
+                padding: 1.5vh 1.75vh!important;
+              }
+              .rsmy-favicon {
+                display: none;
+              }
+              .menu-button {
+                padding: 1.5vh 1.7vh!important;
+                width: auto;
               }
         </style>
     </head>
@@ -244,26 +245,32 @@
         </div>
         <div class="sidenav acrylic">
             <div class="sidenav-cont">
-                <h1>Rosemary</h1>
+                <img class="rsmy-favicon" src="https://gonerogue.ml/rsmy-web-beta/favicon.png">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="nav-button acrylic menu-button" onclick="hideMenu();">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <h1 class="rsmy-title" style="margin-bottom: 0;"><img src="https://gonerogue.ml/rsmy-web-beta/logo.png" style="height: 64px;"></h1>
+                </div>
                 <a class="nav-button acrylic active">
-                    <i class="fa-duotone fa-house"></i>Home
+                    <i class="fa-solid fa-house"></i>Home
                 </a>
                 <a class="nav-button acrylic">
-                    <i class="fa-duotone fa-book"></i>Docs
-                </a>
-                <a href="https://github.com/GoneRogueProductions/rsmy-web-beta" class="nav-button acrylic">
-                    <i class="fa-brands fa-github"></i>Github
+                    <i class="fa-solid fa-book"></i>Docs
                 </a>
                 <a class="nav-button acrylic">
-                    <i class="fa-duotone fa-microchip-ai"></i>AI
+                    <i class="fa-solid fa-house"></i>Docs
                 </a>
                 <a class="nav-button acrylic">
-                    <i class="fa-duotone fa-layer-group"></i>Group Layers
+                    <i class="fa-solid fa-house"></i>Docs
+                </a>
+                <a class="nav-button acrylic">
+                    <i class="fa-solid fa-house"></i>Docs
                 </a>
             </div>
 
             <a class="nav-button active text-center">
-                <i class="fa-duotone fa-download"></i>Download Now!
+                <i class="fa-duotone fa-arrow-down-to-line"></i>Download Now!
             </a>
         </div>
         <div class="main">
@@ -274,7 +281,7 @@
                     cURL -cS "[PLACEHOLDER]" | bash
                 </code>
             </div>
-            <div class="row">
+            <div class="row" style="margin-top: 25px; padding: 25px;">
                 <div class="col-sm" style="border-right: 1px solid gray;">
                     Rosemary is GoneRogue's programming language.
                 </div>
@@ -283,5 +290,31 @@
                 </div>
             </div>
         </div>
+        <script>
+            let hideMenuVar = false;
+            function hideMenu() {
+                if (hideMenuVar === false) {
+                    $(".sidenav").css("width","100px");
+                    $(".nav-button").css("padding-left","1.75vh");
+                    $(".nav-button").css("padding-right","1.75vh");
+                    $(".nav-button").css("white-space","nowrap");
+                    $(".nav-button").css("justify-content","left");
+                    $(".nav-button").css("gap","100vh");
+                    $(".rsmy-title").css("display","none");
+                    $(".rsmy-favicon").css("display","initial");
+                    $(".main").css("padding-left","125px");
+                    hideMenuVar = true;
+                }
+                else if (hideMenuVar === true) {
+                    $(".nav-button").css("padding-left","25px");
+                    $(".nav-button").css("gap","10px");
+                    $(".sidenav").css("width","300px");
+                    $(".rsmy-favicon").css("display","none");
+                    $(".rsmy-title").css("display","initial");
+                    $(".main").css("padding-left","325px");
+                    hideMenuVar = false;
+                }
+            }
+        </script>
     </body>
 </html>
