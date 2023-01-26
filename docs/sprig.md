@@ -6,32 +6,32 @@
 - Then run sprig
 ###### BASH
 ```bash
-sprig pick \<NAME OF PACKAGE>
+sprig pick <NAME OF PACKAGE>
 ```
 ###### POWERSHELL
 ```cmd
-sprig pick \<NAME OF PACKAGE>
+sprig pick <NAME OF PACKAGE>
 ```
 - This will grab 2 files from the server: a .rsmy file, and a JSON manifest file
 - To find out more about the package you just found, try running
 ###### BASH
 ```bash
-sprig info \<NAME OF PACKAGE>
+sprig info <NAME OF PACKAGE>
 ```
 ###### POWERSHELL
 ```cmd
-sprig info \<NAME OF PACKAGE>
+sprig info <NAME OF PACKAGE>
 ```
 - You now have your first sprig installed!
 ### Deleting packages
 - Run this command to remove your chosen package:  
 ###### BASH
 ```bash
-sprig cut\<NAME OF PACKAGE>
+sprig cut <NAME OF PACKAGE>
 ```
 ###### POWERSHELL
 ```cmd
-sprig cut \<NAME OF PACKAGE>
+sprig cut <NAME OF PACKAGE>
 ```
 - The package should now be deleted.
 ### Your packages
