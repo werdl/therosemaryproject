@@ -2,7 +2,7 @@
 ### Contents
 #### Part 1 - Install
 ##### Windows
-- [Windows Install](DOSinstall.md)
+- [Windows Install](NTinstall.md)
 ##### *nix Based
 - [MacOS X Install](placeholder) 
 - [Linux Debian Install](placeholder) 
