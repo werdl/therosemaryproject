@@ -1,6 +1,7 @@
 ## Sprig
 - Sprig is Rosemary's in-house package manager. It comes bundled with Rosemary, so you don't have to install it
 - To use it, you need curl installed! It comes bundled with most systems, try to run ```curl``` to check if it is installed
+<img id="pick"></img>
 ### Downloading packages
 - Pick a package to install. There is a description of each at \<TBC>.\<TBC>/sprigs/\<name>
 - Then run sprig
@@ -23,6 +24,7 @@ sprig info <NAME OF PACKAGE>
 sprig info <NAME OF PACKAGE>
 ```
 - You now have your first sprig installed!
+<img id="delete"></img>
 ### Deleting packages
 - Run this command to remove your chosen package:  
 ###### BASH
@@ -35,6 +37,7 @@ sprig cut <NAME OF PACKAGE>
 ```
 - The package should now be deleted.
 ### Your packages
+<img id="create"></img>
 #### Creating
 - You can fairly easily create your own package, with this command:
 - `sprig build <NAME> <path/to/main.rsmy> <path/to/manifest.json> <path/to/passwd>`
@@ -56,6 +59,7 @@ sprig cut <NAME OF PACKAGE>
 - The passwd file is a one-line file containing the password to edit this Sprig
 - If a Sprig of this name already exists, ensure you have a unique name
 #### Updating and contributing
+<img id="grow"></img>
 - If you want to push the latest version of your code, you will need to run this command
 ###### BASH
 ```bash
