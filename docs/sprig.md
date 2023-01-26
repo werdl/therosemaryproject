@@ -56,4 +56,16 @@ sprig cut \<NAME OF PACKAGE>
 - The passwd file is a one-line file containing the password to edit this Sprig
 - If a Sprig of this name already exists, ensure you have a unique name
 #### Updating and contributing
-- If you want to push the latest version of your code
+- If you want to push the latest version of your code, you will need to run this command
+###### BASH
+```bash
+sprig grow <NAME> <path/to/manifest.json> <path/to/main.rsmy> passwd
+```
+###### POWERSHELL
+```cmd
+sprig grow <NAME> <path/to/manifest.json> <path/to/main.rsmy> passwd
+```
+- The manifest and .rsmy file is the same as above, however you also need to provide a passwd field
+- This needs to match what is in the passwd file uploaded earlier, or the command will fail to build
+- You can give this to anyone who needs to work on the file
+- By this process, you and others can contribute to the same projects
