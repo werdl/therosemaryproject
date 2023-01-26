@@ -13,9 +13,10 @@
 - [Variables](hw.md#var) 
 - [Types](hw.md#types) 
 ##### Error Checking
-- [IDEs](placeholder) 
-- [Errors](placeholder) 
-- [Logs](placeholder) 
+- [IDEs](ide.md) 
+- [Errors](le.md#errors) 
+- [Logs](le.md#logs) 
+- [Debugging Guide](le.md#debug) 
 #### Part 3 - Sprig
 - [Downloading](placeholder) 
 - [Building](placeholder) 
