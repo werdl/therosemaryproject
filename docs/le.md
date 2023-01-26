@@ -21,7 +21,12 @@ Call was <call> Success: <1 or 0> Debug info: <debuginfo> Any messages: <message
 <img id="debug"></img>
 ### Debugging guide
 `TypeError` You have supplied the wrong type, for example int to a string. Try changing your code, but dodgy input may be at fault.
+
 `SyntaxError` You are missing something - check your brackets!
+
 `CompileError` The compiler threw an error - try upgrading to the latest version.
+
 `RunTimeError` Something caused by user error caused this. You may have provided bad input, or the wrong key combination.
+
 `KeyboardInterrupt` Hardly an error. If this occurs without you pressing Ctrl+Shift+Esc, report a bug.
+
