@@ -23,7 +23,6 @@ $x
 >>> $x
 3
 >>>
->
 ```
 <img id ="types"></img>
 #### Types
