@@ -1,7 +1,15 @@
 ## *nix Install
 #### Simple
 - Run this command: 
-- `curl https://github.com/TheRosemaryProject/Rosemary/blob/main/install.sh > install.sh`
-- And then `chmod +x install.sh`
-- Then finally `./install`
+```bash
+curl https://github.com/TheRosemaryProject/Rosemary/blob/main/install.sh > install.sh
+```
+- And then 
+```bash
+chmod +x install.sh
+```
+- Then finally 
+```bash
+./install
+```
 - And Rosemary and Sprig are now installed!
