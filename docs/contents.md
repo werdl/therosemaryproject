@@ -16,7 +16,7 @@
 - [IDEs](placeholder) 
 - [Errors](placeholder) 
 - [Logs](placeholder) 
-#### Part 5 - Sprig
+#### Part 3 - Sprig
 - [Downloading](placeholder) 
 - [Building](placeholder) 
 - [Maintaining a project](placeholder) 
