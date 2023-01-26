@@ -9,9 +9,9 @@
 - [General Unix Executable](*NIXinstall.md) 
 #### Part 2 - Usage
 ##### Hello World
-- [Print to std](placeholder) 
-- [Variables](placeholder) 
-- [Types](placeholder) 
+- [Print to std](hw.md#print) 
+- [Variables](hw.md#var) 
+- [Types](hw.md#types) 
 ##### Error Checking
 - [IDEs](placeholder) 
 - [Errors](placeholder) 
