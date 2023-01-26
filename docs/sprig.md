@@ -58,8 +58,8 @@ sprig cut <NAME OF PACKAGE>
 - Put your info in where needed
 - The passwd file is a one-line file containing the password to edit this Sprig
 - If a Sprig of this name already exists, ensure you have a unique name
-#### Updating and contributing
 <img id="grow"></img>
+#### Updating and contributing
 - If you want to push the latest version of your code, you will need to run this command
 ###### BASH
 ```bash
