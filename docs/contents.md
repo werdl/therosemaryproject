@@ -16,7 +16,11 @@
 - [IDEs](placeholder) 
 - [Errors](placeholder) 
 - [Logs](placeholder) 
-#### Part 3 - Contributing
+#### Part 5 - Sprig
+- [Downloading](placeholder) 
+- [Building](placeholder) 
+- [Maintaining a project](placeholder) 
+#### Part 4 - Contributing
 - [PRs](placeholder) 
 - [Contributing to the docs](placeholder) 
 - [Issues](placeholder) 
