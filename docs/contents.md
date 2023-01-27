@@ -21,7 +21,7 @@
 - [Downloading](sprig.md#pick) 
 - [Building](sprig.md#create) 
 - [Deleting](sprig.md#delete)
-- [Maintaining a project]((sprig.md#grow) 
+- [Maintaining a project](sprig.md#grow) 
 #### Part 4 - Contributing
 - [PRs](placeholder) 
 - [Contributing to the docs](placeholder) 
